@@ -35,7 +35,7 @@ export default function App() {
       <div className="relative z-10 w-full max-w-lg px-8 py-24">
 
         <p className="text-xs text-zinc-500 tracking-[0.3em] uppercase mb-4 text-center">
-          Random Facts
+          Random Facts About Cats
         </p>
 
         <h1
