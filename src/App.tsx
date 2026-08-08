@@ -13,7 +13,7 @@ export default function App() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center">
+      <div className="bg-app flex items-center justify-center">
         <p className="text-sm text-zinc-500 tracking-[0.2em] uppercase">
           Loading...
         </p>
@@ -30,16 +30,9 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] relative overflow-hidden font-sans">
+    <div className="bg-app flex flex-col items-center justify-center font-sans">
 
-      <div
-        className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-600 h-125 rounded-full opacity-70 blur-[120px]"
-        style={{
-          background: 'radial-gradient(circle, #0ea5e9 0%, #06b6d4 40%, transparent 70%)',
-        }}
-      />
-
-      <div className="relative z-10 max-w-lg mx-auto px-8 pt-28">
+      <div className="relative z-10 w-full max-w-lg px-8 py-24">
 
         <p className="text-xs text-zinc-500 tracking-[0.3em] uppercase mb-4 text-center">
           Random Facts
@@ -63,17 +56,17 @@ export default function App() {
           </p>
         </div>
 
-        <div className="flex items-center justify-between">
-          <span className="text-xs text-zinc-600 tracking-[0.15em] uppercase">
-            {catfact.fact.length} chars
-          </span>
-
+        <div className="flex flex-col items-center gap-8">
           <button
             onClick={() => refetch()}
             className="relative px-6 py-3 bg-cyan-500 text-black text-sm font-bold rounded-xl hover:bg-cyan-400 transition-colors tracking-[0.05em] uppercase"
           >
             <span className="relative z-10">New Fact</span>
           </button>
+
+          <span className="text-xs text-zinc-600 tracking-[0.15em] uppercase">
+            {catfact.fact.length} chars
+          </span>
         </div>
 
       </div>

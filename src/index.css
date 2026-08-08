@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+.bg-app {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  background: #0a0a0a;
+}
+
+.bg-app::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 42rem;
+  height: 30rem;
+  border-radius: 9999px;
+  opacity: 0.35;
+  filter: blur(80px);
+  background: radial-gradient(circle, #0ea5e9 0%, #06b6d4 40%, transparent 70%);
+  pointer-events: none;
+}
