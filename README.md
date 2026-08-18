@@ -1,6 +1,6 @@
 # 🐱 Cat Fact
 
-A simple React app that shows a random cat fact, with a dark neon aesthetic. Built with **React 19**, **TypeScript**, **Vite**, **Tailwind CSS v4**, and **TanStack Query**.
+A simple React app that shows a random cat fact, with a dark neon aesthetic. Built with **React 19**, **TypeScript**, **Vite**, **Tailwind CSS v4**, **Axios**, and **TanStack Query**.
 
 ## Features
 
